@@ -32,9 +32,9 @@ Bu proje MIT Lisansı altında lisanslanmıştır.
 1. Projenin kopyasını bilgisayarınıza indirin veya repoyu klonlayın.
 
 ```bash
-git clone https://github.com/kullanici/sinema-rezervasyon-projesi.git
+git clone https://github.com/mehmetpolat46/Sinema-Rezervasyon.git
 
-cd sinema-rezervasyon-projesi
+cd Sinema-Rezervasyon
 index.html dosyasını tarayıcınızda açın.
 
 

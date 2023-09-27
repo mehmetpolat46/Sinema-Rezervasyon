@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./logo5e.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sinema Koltuk Rezervasyonu</title>
+    <!--Font Awesome Icon Pack-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+
+    <!--Style Dosyası-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--Sinema perdesi-->
+      <div class="screen">
+        <img
+          src="data:image/png;base64,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"
+          alt=""
+        />
+      </div>
+
+      <!--1. Koltuk sırası divi-->
+      <div class="seatRow">
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--1. Koltuk sırası divi-->
+      <!--2. Koltuk sırası divi-->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--2. Koltuk sırası divi-->
+
+      <!--3. Koltuk sırası divi-->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--3. Koltuk sırası divi-->
+      <!--4. Koltuk sırası divi-->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--4. Koltuk sırası divi-->
+      <!--5. Koltuk sırası divi-->
+      <div class="seatRow">
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+      </div>
+      <!--5. Koltuk sırası divi-->
+    </div>
+    <!-- Film Seçim Barı-->
+
+    <div class="movie-list">
+      <select id="movie" onchange="changeMovie()">
+        <option disabled>Film Seçiniz</option>
+        <option value="100">Film-1</option>
+        <option value="200">Film-2</option>
+        <option value="300">Film-3</option>
+      </select>
+    </div>
+    <!-- Film Seçim Barı-->
+
+    <!--Koltuk Bilgi Barı-->
+
+    <ul>
+      <li>
+        <div class="seat reserved"><i class="fa-solid fa-chair"></i></div>
+        <span>Reserve</span>
+      </li>
+      <li>
+        <div class="seat selected"><i class="fa-solid fa-chair"></i></div>
+        <span>Seçili Koltuk</span>
+      </li>
+      <li>
+        <div class="seat"><i class="fa-solid fa-chair"></i></div>
+        <span>Boş</span>
+      </li>
+    </ul>
+
+    <!--Tutar Bilgi-->
+
+    <p class="infoText">
+      <span id="count"></span> koltuk için hesaplanan ücret
+      <span id="amount">150 TL</span>
+    </p>
+
+    <!--Java Script-->
+    <script src="./main.js"></script>
+
+  
+  </body>
+</html>

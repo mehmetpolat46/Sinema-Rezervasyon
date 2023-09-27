@@ -1,0 +1,109 @@
+/*CSS Default Değer Sıfırlama*/
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Değişkenler */
+:root {
+  --background-color: #292929;
+  --seat-color: #444451;
+  --text-color: #777;
+  --selected-color: #f6eb6f;
+  --reserved-color: #fff;
+  --info-background: rgba(0, 0, 0, 0.2);
+
+  /*Animasyon*/
+
+  --transition: all 0.5s ease;
+
+  /*Gölge*/
+
+  --box-shadow: 1px 10px 45px 7px rgba(255, 255, 255, 0.75);
+}
+
+body {
+  background: url(arkaplan.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.screen {
+  height: 200px;
+  width: 500px;
+  margin: 50px 0;
+  box-shadow: var(--box-shadow);
+}
+
+.screen img {
+  height: 100%;
+  width: 100%;
+}
+
+.seatRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.seat {
+  color: var(--seat-color);
+  font-size: 30px;
+  transition: var(--transition);
+}
+
+.seat.selected {
+  color: var(--selected-color);
+  background-color: transparent;
+}
+
+.seat.reserved {
+  color: var(--reserved-color);
+}
+
+.seat:not(.reserved):hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+ul {
+  background-color: rgb(80, 147, 181);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px 25px;
+  border-radius: 5px;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: black;
+}
+
+.infoText {
+  color: black;
+  display: none;
+}
+
+.infoText span {
+  color:red;
+}
+#movie{
+  padding:5px 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  background: #c3c3ea;
+}
